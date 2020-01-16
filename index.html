@@ -46,6 +46,17 @@
         },function (time) {
         //倒计时结束后的操作
         })
+        xcsoft.countdown('2020-07-28',function (time) {
+        //time.days=总天数
+        document.getElementById("y").innerHTML=time.year
+        document.getElementById("d").innerHTML=time.day
+        document.getElementById("h").innerHTML=time.hourZero
+        document.getElementById("i").innerHTML=time.minuteZero
+        document.getElementById("s").innerHTML=time.secondZero
+        document.getElementById("m").innerHTML=time.msecZero
+        },function (time) {
+        //倒计时结束后的操作
+        })
         xcsoft.countup('2019-05-20',function (time) {
         document.getElementById("y2").innerHTML=time.year
         document.getElementById("d2").innerHTML=time.day
@@ -63,6 +74,35 @@
         }
     </script>
 
+    <div>
+        <i>距2020年07月28日还有</i>
+        <div>
+            <span class="red">
+                <p id="y"></p>
+                <p>年</p>
+            </span>
+            <span class="yg">
+                <p id="d"></p>
+                <p>天</p>
+            </span>
+            <span class="or">
+                <p id="h"></p>
+                <p>时</p>
+            </span>
+            <span class="pi">
+                <p id="i"></p>
+                <p>分</p>
+            </span>
+            <span class="pk">
+                <p id="s"></p>
+                <p>秒</p>
+            </span>
+            <span class="mk">
+                <p id="m"></p>
+                <p>毫秒</p>
+            </span>
+        </div>
+    </div>
 
     <div>
         <i>距2020年04月05日还有</i>
@@ -120,9 +160,26 @@
             </span>
         </div>
     </div>
+    <div>
 
 
+    </div>
+    <div>
+        <span class="or">
+            <p>备</p>
+        </span>
+        <span class="or">
+            <p>忘</p>
+        </span>
+        <span class="or">
+            <p>录</p>
+        </span>
+    </div>
 
+    <div>
+        <i>明天记得带耳机，定闹钟，化妆，定外卖</i>
+    </div>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579171815265&di=f8195af184f231226989909afd75a3c2&imgtype=0&src=http%3A%2F%2Fbbs.lyd.com.cn%2Fdata%2Fattachment%2Fforum%2F201210%2F29%2F2159121bts2l836z33olss.gif" alignleft />
 
 </body>
 </html>
