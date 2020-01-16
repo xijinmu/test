@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>JS彩色方块倒计时代码 - 站长素材</title>
+<title>高恩泽制作</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="format-detection" content="telephone=yes" />
 </head>
@@ -35,7 +35,7 @@
      * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
      */
     window.onload=function(){
-        xcsoft.countdown('2028-11-11',function (time) {
+        xcsoft.countdown('2020-04-05',function (time) {
             //time.days=总天数
             document.getElementById("y1").innerHTML=time.year
             document.getElementById("d1").innerHTML=time.day
@@ -46,7 +46,7 @@
         },function (time) {
             //倒计时结束后的操作
         })
-        xcsoft.countup('2018-11-11',function (time) {
+        xcsoft.countup('2019-06-18',function (time) {
             document.getElementById("y2").innerHTML=time.year
             document.getElementById("d2").innerHTML=time.day
             document.getElementById("h2").innerHTML=time.hourZero
@@ -65,7 +65,7 @@
 
 
 <div>
-    <i>距2028年11月11日还有</i>
+    <i>距2020年04月05日还有</i>
     <div>
         <span class="red">
             <p id="y1"></p>
@@ -96,7 +96,7 @@
 
 
 <div>
-    <i>从2018年11月11日至今已经过去</i>
+    <i>从2019年06月18日至今已经过去</i>
     <div>
         <span class="red">
             <p id="y2"></p>
