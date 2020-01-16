@@ -26,116 +26,122 @@
 
 <body>
 
-<script type="text/javascript" src="js/timecountdown.js"></script>
-<script type="text/javascript">
-    /**
-     * time.day 和 time.dayZero 区别
-     * time.day 如果是1天 返回 1
-     * time.dayZero 如果是1天 则返回 01
-     * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
-     */
-    window.onload=function(){
+    <script type="text/javascript" src="js/timecountdown.js"></script>
+    <script type="text/javascript">
+        /**
+        * time.day 和 time.dayZero 区别
+        * time.day 如果是1天 返回 1
+        * time.dayZero 如果是1天 则返回 01
+        * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+        */
+        window.onload=function(){
         xcsoft.countdown('2020-04-05',function (time) {
-            //time.days=总天数
-            document.getElementById("y1").innerHTML=time.year
-            document.getElementById("d1").innerHTML=time.day
-            document.getElementById("h1").innerHTML=time.hourZero
-            document.getElementById("i1").innerHTML=time.minuteZero
-            document.getElementById("s1").innerHTML=time.secondZero
-            document.getElementById("m1").innerHTML=time.msecZero
+        //time.days=总天数
+        document.getElementById("y1").innerHTML=time.year
+        document.getElementById("d1").innerHTML=time.day
+        document.getElementById("h1").innerHTML=time.hourZero
+        document.getElementById("i1").innerHTML=time.minuteZero
+        document.getElementById("s1").innerHTML=time.secondZero
+        document.getElementById("m1").innerHTML=time.msecZero
         },function (time) {
-            //倒计时结束后的操作
+        //倒计时结束后的操作
         })
         xcsoft.countup('2019-06-18',function (time) {
-            document.getElementById("y2").innerHTML=time.year
-            document.getElementById("d2").innerHTML=time.day
-            document.getElementById("h2").innerHTML=time.hourZero
-            document.getElementById("i2").innerHTML=time.minuteZero
-            document.getElementById("s2").innerHTML=time.secondZero
+        document.getElementById("y2").innerHTML=time.year
+        document.getElementById("d2").innerHTML=time.day
+        document.getElementById("h2").innerHTML=time.hourZero
+        document.getElementById("i2").innerHTML=time.minuteZero
+        document.getElementById("s2").innerHTML=time.secondZero
         })
 
         var nes=parseInt(new Date().getTime()/1000)+60;
         xcsoft.countdown(parseInt(nes)+'.3',function (time) {
-            document.getElementById("s3").innerHTML=time.secondZero
-            document.getElementById("m3").innerHTML=time.msecZero
+        document.getElementById("s3").innerHTML=time.secondZero
+        document.getElementById("m3").innerHTML=time.msecZero
         })
 
-    }
-</script>
+        }
+    </script>
 
 
-<div>
-    <i>距2020年04月05日还有</i>
     <div>
-        <span class="red">
-            <p id="y1"></p>
-            <p>年</p>
-        </span>
-        <span class="yg">
-            <p id="d1"></p>
-            <p>天</p>
-        </span>
-        <span class="or">
-            <p id="h1"></p>
-            <p>时</p>
-        </span>
-        <span class="pi">
-            <p id="i1"></p>
-            <p>分</p>
-        </span>
-        <span class="pk">
-            <p id="s1"></p>
-            <p>秒</p>
-        </span>
-        <span class="mk">
-            <p id="m1"></p>
-            <p>毫秒</p>
-        </span>
+        <i>距2020年04月05日还有</i>
+        <div>
+            <span class="red">
+                <p id="y1"></p>
+                <p>年</p>
+            </span>
+            <span class="yg">
+                <p id="d1"></p>
+                <p>天</p>
+            </span>
+            <span class="or">
+                <p id="h1"></p>
+                <p>时</p>
+            </span>
+            <span class="pi">
+                <p id="i1"></p>
+                <p>分</p>
+            </span>
+            <span class="pk">
+                <p id="s1"></p>
+                <p>秒</p>
+            </span>
+            <span class="mk">
+                <p id="m1"></p>
+                <p>毫秒</p>
+            </span>
+        </div>
     </div>
-</div>
 
 
-<div>
-    <i>从2019年06月18日至今已经过去</i>
     <div>
-        <span class="red">
-            <p id="y2"></p>
-            <p>年</p>
-        </span>
-        <span class="yg">
-            <p id="d2"></p>
-            <p>天</p>
-        </span>
-        <span class="or">
-            <p id="h2"></p>
-            <p>时</p>
-        </span>
-        <span class="pi">
-            <p id="i2"></p>
-            <p>分</p>
-        </span>
-        <span class="pk">
-            <p id="s2"></p>
-            <p>秒</p>
-        </span>
+        <i>从2019年06月18日至今已经过去</i>
+        <div>
+            <span class="red">
+                <p id="y2"></p>
+                <p>年</p>
+            </span>
+            <span class="yg">
+                <p id="d2"></p>
+                <p>天</p>
+            </span>
+            <span class="or">
+                <p id="h2"></p>
+                <p>时</p>
+            </span>
+            <span class="pi">
+                <p id="i2"></p>
+                <p>分</p>
+            </span>
+            <span class="pk">
+                <p id="s2"></p>
+                <p>秒</p>
+            </span>
+        </div>
     </div>
-</div>
 
 
-<div>
-    <i>60秒倒计时</i>
     <div>
-        <span class="pk">
-            <p id="s3"></p>
-            <p>秒</p>
-        </span>
-        <span class="mk">
-            <p id="m3"></p>
-            <p>毫秒</p>
-        </span>
+        <i>60秒倒计时</i>
+        <div>
+            <span class="pk">
+                <p id="s3"></p>
+                <p>秒</p>
+            </span>
+            <span class="mk">
+                <p id="m3"></p>
+                <p>毫秒</p>
+            </span>
+        </div>
     </div>
-</div>
 
+    <!-- 爱心播报 -->
+    <div id="weather-view-he"></div>
+    <script>
+        WIDGET = {ID: 'V4jcKDOn5F'};
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/view/static/js/r.js?v=1111"></script>
 
 </body>
 </html>
